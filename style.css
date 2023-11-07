@@ -1,0 +1,92 @@
+/* 在HTML的<style>中 */
+/* 设置整个页面的背景颜色为#F5F5F5 */
+body {
+    background-color: #F5F5F5;
+    width: 1400px; /* 设置网页的最大宽度为1200像素，可以根据需要调整 */
+    margin: 0 auto; /* 居中对齐网页内容 */
+    font-family: Arial, sans-serif;
+}
+
+/* 设置顶部标题栏的背景图片 */
+header {
+    background-image: url('/image/mainpic.jpg');
+    background-size: cover;
+    color: #fff;
+    padding: 150px;
+    text-align: center;
+}
+
+/* 设置导航栏 */
+nav {
+    background-color: #fff;
+    color: #444; /* 导航栏文本颜色 */
+    margin-top: 10px; /* 添加20像素的顶部外边距，分隔标题栏和导航栏 */
+    margin-bottom: 10px; /* 添加20像素的顶部外边距，分隔标题栏和导航栏 */
+    padding: 10px;
+}
+
+/* 定义导航栏的无序列表样式 */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; /* 移除外边距 */
+}
+
+/* 定义导航栏的列表项样式 */
+nav li {
+    display: inline;
+    margin-right: 10px;
+}
+
+/* 设置正文栏 */
+section {
+    background-color: #fff;
+    padding: 20px;
+
+    border-bottom: 1px solid #ccc; /* 添加一条1像素的分隔线 */
+}
+
+/* 定义页脚的样式 */
+footer {
+    background-color: #fff;
+    color: #444;
+    text-align: center;
+    padding: 10px;
+}
+
+/* 收藏网站链接的样式 */
+    .scholar {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px; /* 链接之间的间距 */
+    }
+
+    /*设置连接按照行排列*/
+    .scholar .row {
+        display: flex
+    }
+
+    .scholar .row .scholar-link {
+        display: flex;
+        align-items: center; /* 图标和文字垂直居中 */
+        text-decoration: none; /* 去掉下划线 */
+        color: #444; /* 文字颜色 */
+        margin-bottom: 10px; /* 设置链接元素之间的垂直间距 */
+    }
+
+    .scholar .row .scholar-link img {
+        height: 30px; /* 图标宽度 */
+        width: auto; /* 图标高度 */
+        margin-right: 10px; /* 图标和文字之间的距离 */
+    }
+
+    .scholar .row .scholar-link :first-child{
+        margin-left: 30px;
+        font-weight: bold
+    }
+
+    .scholar .row .scholar-link span {
+        min-width: 80px; /* 设置固定的宽度，可以根据需要调整 */
+    }
+
+

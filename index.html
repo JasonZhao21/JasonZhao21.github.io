@@ -1,57 +1,142 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>你的名字</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #FAFAFA;
-            color: #1A1A1A;
-        }
-        .profile {
-            display: flex;
-            align-items: center;
-            margin: 20px;
-        }
-        .profile-picture {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            margin-right: 20px;
-        }
-        .profile-info h2, .profile-info p {
-            margin: 0;
-        }
-        .section {
-            background-color: #FFFFFF;
-            padding: 20px;
-            margin: 20px;
-            border-radius: 5px;
-        }
-    </style>
-</head>
-<body>
-    <div class="profile">
-        <img src="你的照片链接" alt="Profile Picture" class="profile-picture">
-        <div class="profile-info">
-            <h2>你的名字</h2>
-            <p>这里是你的个人简介。</p>
-        </div>
-    </div>
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>赵老板小站</title>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <link rel="stylesheet" type="text/css" href="style.css">
 
-    <div class="section">
-        <h2>我的工作</h2>
-        <p>这里是你的工作经历和成就。</p>
-    </div>
+  </head>
 
-    <div class="section">
-        <h2>联系我</h2>
-        <p>这里是你的联系方式和社交媒体链接。</p>
-    </div>
+  <body>
+      <header>
+          <h1>zlb的小站</h1>
+      </header>
+      <nav>  <!-- 通常用于定义网页导航链接的部分 -->
+          <ul>  <!-- 代表“无序列表”，用于创建没有特定顺序的项目列表代表“无序列表”，用于创建没有特定顺序的项目列表 -->
+              <li><a href="#scholar">我收藏的网站</a></li>  <!-- 代表“列表项”，表示列表中的个别项目 -->
+              <li><a href="#section2">Section 2</a></li>  <!-- <a>：这是锚元素，用于创建超链接。href属性指定链接指向的URL-->
+              <li><a href="#section3">Section 3</a></li>
+          </ul>
+      </nav>
+      <section id="scholar">  <!-- 锚点标识符-->
+          <h2>科研必备</h2>
+          <div class="scholar">  <!-- <div>：通用容器元素，用于组合和样式内容 -->
+              <div class="row">
+                  <a><span>学术搜索</span></a>
 
-    <footer>
-        <p>版权所有 © 2023 你的名字</p>
-    </footer>
-</body>
+                  <a href="https://scholar.lanfanshu.cn/" target="_blank"
+                     class="scholar-link"
+                     title="免翻墙的谷歌学术"><!-- target="_blank" 在新的浏览器标签或窗口中打开链接 -->
+                      <img src="\website picture\scholar\google scholar_cn.png." alt="Google Scholar">  <!--提供图像的替代文本的alt属性，图片无法加载时显示-->
+                      <span>Google Scholar/cn</span>
+                  </a>
+
+                  <a href="https://scholar.google.com/" target="_blank"
+                     class="scholar-link"
+                     title="正经谷歌学术"><!-- target="_blank" 在新的浏览器标签或窗口中打开链接 -->
+                      <img src="\website picture\scholar\google scholar.png." alt="Google Scholar">  <!--提供图像的替代文本的alt属性，图片无法加载时显示-->
+                      <span>Google Scholar</span>
+                  </a>
+
+                  <a href="https://sci-hub.se/" target="_blank"
+                     class="scholar-link"
+                     title="根据论文doi号免费下载论文">
+                      <img src="\website picture\scholar\sci-hub.png" alt="sci-hub">
+                      <span>sci-hub</span>
+                  </a>
+
+                  <a href="https://ieeexplore.ieee.org/Xplore/home.jsp" target="_blank"
+                     class="scholar-link"
+                     title="IEEE Xplore">
+                      <img src="\website picture\scholar\IEEE.png" alt="IEEE">
+                      <span>IEEE</span>
+                  </a>
+
+                  <a href="https://www.myhuiban.com/conferences" target="_blank"
+                     class="scholar-link"
+                     title="会伴：全球会议查询">
+                      <img src="\website picture\scholar\Conference Partner.png" alt="Conference Partner">
+                      <span>Conference Partner</span>
+                  </a>
+              </div>
+
+              <div class="row">
+                  <a><span> 学术翻译</span></a>
+
+                  <a href="https://fanyi.youdao.com/index.html#/" target="_blank"
+                     class="scholar-link"
+                     title="有道翻译">
+                      <img src="\website picture\scholar\youdao.png" alt="youdao">
+                      <span>有道翻译</span>
+                  </a>
+
+                  <a href="https://www.deepl.com/translator" target="_blank"
+                     class="scholar-link"
+                     title="全世界最准的学术翻译">
+                      <img src="\website picture\scholar\deepl.png" alt="deepl">
+                      <span>DeepL</span>
+                  </a>
+
+                  <a href="https://dict.cnki.net/index#" target="_blank"
+                     class="scholar-link"
+                     title="知网的学术翻译">
+                      <img src="\website picture\scholar\cnki.png" alt="cnki">
+                      <span>Cnki学术翻译</span>
+                  </a>
+
+              </div>
+
+              <div class="row">
+                  <a><span> 期刊检索 </span></a>
+
+                  <a href="https://www.letpub.com.cn/index.php?page=journalapp" target="_blank"
+                     class="scholar-link"
+                     title="期刊查询">
+                      <img src="\website picture\scholar\LetPub.png" alt="LetPub">
+                      <span>LetPub</span>
+                  </a>
+
+                  <a href="https://sci.justscience.cn" target="_blank"
+                     class="scholar-link"
+                     title="IEEE 期刊查询">
+                      <img src="\website picture\scholar\justscience.png" alt="justscience">
+                      <span>Justscience</span>
+                  </a>
+
+                  <a href="https://jcr.clarivate.com/jcr/home" target="_blank"
+                     class="scholar-link"
+                     title="Clarivate 期刊查询">
+                      <img src="\website picture\scholar\Clarivate.png" alt="Clarivate">
+                      <span>Journal Citation Reports</span>
+                  </a>
+
+                  <a href="https://jane.biosemantics.org/index.php" target="_blank"
+                     class="scholar-link"
+                     title="根据摘要/关键词查询适合投递的期刊">
+                      <img src="\website picture\scholar\Jane.png" alt="Jane">
+                      <span>Jane</span>
+                  </a>
+
+              </div>
+          </div>
+      </section>
+
+      <section id="Ai生产力">
+          <h2>Ai生产力</h2>
+          <p>这是第二部分的内容。</p>
+      </section>
+
+      <section id="科学上网">
+          <h2>科学上网</h2>
+          <p>这是第三部分的内容。</p>
+      </section>
+
+      <footer>
+          <p>&copy; 2023 zlb的小站</p>
+      </footer>
+  </body>
+
 </html>
-
